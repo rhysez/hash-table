@@ -27,6 +27,8 @@ class HashTable {
     }
 
     insert(key, value) {
+        // this is the index in the hash table
+		// where key-value will be stored
         let index = hash(key, this.size);
         // .set is a built in method on the Map() data structure
         // this inserts the key value pair
